@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuthStore } from "../Store/useAuthStore";
-import { EyeOff, Loader2, Lock, Mail, MessageSquare, User } from "lucide-react";
+import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import AuthImagePattern from "../components/AuthImagePattern";
 import toast from "react-hot-toast";
@@ -50,7 +50,7 @@ function SignUpPage() {
           </div>
 
 
-          {/* FILLNAME */}
+          {/* FULLNAME */}
 
 
 
@@ -127,7 +127,7 @@ function SignUpPage() {
                   {showPassword ? (
                     <EyeOff className="size-5  text-base-content/40" />
                   ) : (
-                    <EyeOff className="size-5 text-base-content/40" />
+                    <Eye className="size-5 text-base-content/40" />
                   )}
                 </button>
               </div>
